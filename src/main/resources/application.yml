@@ -1,0 +1,16 @@
+spring:
+   datasource:
+          url: jdbc:postgresql://localhost:5432/demo
+          username: postgres
+          password: admin@123
+          driverClassName: org.postgresql.Driver
+jpa:
+  hibernate:
+  ddl-auto: update
+  show-sql: true
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+swagger-ui:
+  path: /students-swagger-ui.html
+  api-docs:
+    path: /v3/students-api-docs
