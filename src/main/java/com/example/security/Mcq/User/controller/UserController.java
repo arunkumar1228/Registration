@@ -13,7 +13,8 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(value = UserConstants.API)
+@RequestMapping(value = "v1/User")
+
 public class UserController {
     private final UserServiceImpl userService;
 

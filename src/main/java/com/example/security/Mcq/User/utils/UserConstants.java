@@ -11,7 +11,6 @@ public class UserConstants {
     public static final String NO_PhoneNumber = " NO_PhoneNumber is not provided";
     public static final String INVALID_PhoneNumber = "Invalid PhoneNumber";
     public static final String Email_Id = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
-    public static final String API = "api/v1";
 
     public static final String NO_EmailId = " Email-id is not provided";
 
