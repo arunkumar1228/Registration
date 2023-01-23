@@ -1,4 +1,4 @@
-package com.example.security.utils;
+package com.example.security.Mcq.User.utils;
 
 public class UserConstants {
     public static final String NAME_REGEX = "^[a-zA-Z \\\\s]*$";

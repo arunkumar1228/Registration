@@ -1,9 +1,9 @@
-package com.example.security.controller;
+package com.example.security.Mcq.User.controller;
 
-import com.example.security.dto.UserDto;
-import com.example.security.entity.User;
-import com.example.security.service.UserServiceImpl;
-import com.example.security.utils.UserConstants;
+import com.example.security.Mcq.User.dto.UserDto;
+import com.example.security.Mcq.User.entity.User;
+import com.example.security.Mcq.User.service.UserServiceImpl;
+import com.example.security.Mcq.User.utils.UserConstants;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

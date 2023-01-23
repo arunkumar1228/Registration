@@ -2,7 +2,7 @@ server:
   port: 8080
 
   servlet:
-    context-path: /qbrainx-web
+    context-path: /qbrainx-Mcq
 
 spring:
   datasource:
@@ -12,7 +12,7 @@ spring:
     driverClassName: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto:
 
 
     show-sql: true

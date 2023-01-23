@@ -1,4 +1,4 @@
-package com.example.security.entity;
+package com.example.security.Mcq.User.entity;
 
 
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.example.security.dto;
+package com.example.security.Mcq.User.dto;
 
 import com.sun.istack.NotNull;
 import lombok.Getter;

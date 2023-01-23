@@ -1,8 +1,8 @@
-package com.example.security.service;
+package com.example.security.Mcq.User.service;
 
-import com.example.security.dto.UserDto;
-import com.example.security.entity.User;
-import com.example.security.repository.UserRepository;
+import com.example.security.Mcq.User.dto.UserDto;
+import com.example.security.Mcq.User.entity.User;
+import com.example.security.Mcq.User.repository.UserRepository;
 
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-import static com.example.security.utils.UserConstants.*;
+import static com.example.security.Mcq.User.utils.UserConstants.*;
 
 @Service
 public class UserServiceImpl implements UserService {

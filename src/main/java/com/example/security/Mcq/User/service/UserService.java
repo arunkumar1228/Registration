@@ -1,7 +1,7 @@
-package com.example.security.service;
+package com.example.security.Mcq.User.service;
 
-import com.example.security.dto.UserDto;
-import com.example.security.entity.User;
+import com.example.security.Mcq.User.dto.UserDto;
+import com.example.security.Mcq.User.entity.User;
 
 import java.util.List;
 import java.util.Optional;

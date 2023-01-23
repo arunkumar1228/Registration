@@ -1,4 +1,4 @@
-package com.example.security.config;
+package com.example.security.Mcq.config;
 
 import org.dozer.DozerBeanMapper;
 import org.modelmapper.ModelMapper;
