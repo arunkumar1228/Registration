@@ -22,7 +22,7 @@ public class Question {
 
     private String Question;
 
-    @OneToMany(targetEntity = Answer.class,cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = Answer.class,cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinColumn(name ="question_id",referencedColumnName = "id")
     private List<Answer> answers;
 
