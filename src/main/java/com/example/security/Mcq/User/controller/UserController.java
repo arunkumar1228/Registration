@@ -3,7 +3,7 @@ package com.example.security.Mcq.User.controller;
 import com.example.security.Mcq.User.dto.UserDto;
 import com.example.security.Mcq.User.entity.User;
 import com.example.security.Mcq.User.service.UserServiceImpl;
-import com.example.security.Mcq.User.utils.UserConstants;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,8 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(value = "v1/User")
+@CrossOrigin("http://localhost:4200")
+@RequestMapping(value = "/v1")
 
 public class UserController {
     private final UserServiceImpl userService;
@@ -23,7 +24,7 @@ public class UserController {
     }
 
 
-    @PostMapping(value = UserConstants.POST_User, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/insertData", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> addEmployee(@RequestBody UserDto userDto) {
         String serviceResponse = userService.saveUser(userDto);
         if (serviceResponse != null) {
