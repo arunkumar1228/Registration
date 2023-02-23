@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Registration.qbrainx-website-dev.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Registration.qbrainx-website-dev.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.qbrainx.qbrainx-website-dev.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.qbrainx.qbrainx-website-dev.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/qbrainx-website-dev.main.iml" filepath="$PROJECT_DIR$/.idea/modules/qbrainx-website-dev.main.iml" />
     </modules>
