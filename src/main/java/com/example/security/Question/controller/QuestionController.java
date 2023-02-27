@@ -1,7 +1,7 @@
-package com.example.security.Admin.controller;
+package com.example.security.Question.controller;
 
-import com.example.security.Admin.entity.Question;
-import com.example.security.Admin.service.QuestionService;
+import com.example.security.Question.entity.Question;
+import com.example.security.Question.service.QuestionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,19 +9,20 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/authors")
+@CrossOrigin("http://localhost:4200")
+@RequestMapping("/api/question")
 public class QuestionController {
     private final QuestionService questionService;
 
     public QuestionController(QuestionService questionService) {
         this.questionService = questionService;
     }
-    @PostMapping
+    @PostMapping(value = "AddAllQuestion")
     public Question createAuthor(@RequestBody Question question) {
         return questionService.save(question);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("GetQuestionById/{id}")
     public Optional<Question> getAuthorById(@PathVariable(value = "id") Long authorId) {
         return questionService.findById(authorId);
     }
@@ -31,7 +32,7 @@ public class QuestionController {
         return questionService.findAll();
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("DetailsQuestionById/{id}")
     public ResponseEntity<?> deleteAuthor(@PathVariable(value = "id") Long authorId) {
         questionService.deleteById(authorId);
         return ResponseEntity.ok().build();

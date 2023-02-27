@@ -1,4 +1,4 @@
-package com.example.security.Admin.entity;
+package com.example.security.Question.entity;
 
 import lombok.Data;
 
@@ -10,13 +10,13 @@ import java.util.List;
 @Data
 public class Question {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
     private String question;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,orphanRemoval = true)
     @JoinColumn(name = "question_id")
     private List<Answer> answers = new ArrayList<>();
 }

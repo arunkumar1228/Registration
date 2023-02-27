@@ -1,7 +1,7 @@
-package com.example.security.Admin.service;
+package com.example.security.Question.service;
 
-import com.example.security.Admin.entity.Question;
-import com.example.security.Admin.repository.QuestionRepository;
+import com.example.security.Question.entity.Question;
+import com.example.security.Question.repository.QuestionRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

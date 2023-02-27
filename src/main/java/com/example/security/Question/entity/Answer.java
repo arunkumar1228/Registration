@@ -1,4 +1,4 @@
-package com.example.security.Admin.entity;
+package com.example.security.Question.entity;
 
 import lombok.Data;
 
@@ -11,6 +11,6 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false)
+
     private String Options;
 }

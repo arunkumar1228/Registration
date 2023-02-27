@@ -1,7 +1,7 @@
-package com.example.security.SupperAdmin.repository;
+package com.example.security.Admin.repository;
 
 
-import com.example.security.SupperAdmin.entity.Admin;
+import com.example.security.Admin.entity.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

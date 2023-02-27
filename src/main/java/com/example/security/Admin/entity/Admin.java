@@ -1,4 +1,4 @@
-package com.example.security.SupperAdmin.entity;
+package com.example.security.Admin.entity;
 
 import lombok.Data;
 

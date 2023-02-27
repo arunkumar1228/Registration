@@ -1,8 +1,8 @@
-package com.example.security.SupperAdmin.service;
+package com.example.security.Admin.service;
 
 
-import com.example.security.SupperAdmin.entity.Admin;
-import com.example.security.SupperAdmin.repository.AdminRepository;
+import com.example.security.Admin.entity.Admin;
+import com.example.security.Admin.repository.AdminRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
