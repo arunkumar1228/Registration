@@ -1,18 +1,18 @@
 server:
-  port: 8080
-
   servlet:
-    context-path: /qbrainx-web
-
+    context-path: /qbrainx-Mcq-home
+  tomcat:
+    relaxed-query-chars: [ '{','}' ]
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/Qbrainx
+    url: jdbc:postgresql://localhost:5432/Qbrainx-website
     username: postgres
     password: admin@1234
     driverClassName: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
+
 
 
     show-sql: true
@@ -20,7 +20,6 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
     generate-ddl: true
-
 
 
 springdoc:

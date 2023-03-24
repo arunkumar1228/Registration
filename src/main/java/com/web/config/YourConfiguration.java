@@ -1,4 +1,4 @@
-package com.web.Mcq.config;
+package com.web.config;
 
 import org.dozer.DozerBeanMapper;
 import org.modelmapper.ModelMapper;
