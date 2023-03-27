@@ -28,6 +28,7 @@ public class AdminController {
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
+
     @PostMapping("/AdminLogin")
     public String login(@RequestParam String username, @RequestParam String password) throws AuthenticationException {
         return adminService.login(username, password);

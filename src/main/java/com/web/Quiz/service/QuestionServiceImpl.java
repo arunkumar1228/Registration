@@ -3,7 +3,9 @@ package com.web.Quiz.service;
 import com.web.Exception.BannerNotFoundException;
 
 import com.web.Quiz.dto.QuestionDto;
+import com.web.Quiz.model.Answer;
 import com.web.Quiz.model.Question;
+import com.web.Quiz.repository.AnswerRepository;
 import com.web.Quiz.repository.QuestionRepository;
 import org.dozer.DozerBeanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,8 @@ public class QuestionServiceImpl implements QuestionService {
     DozerBeanMapper dozerBeanMapper;
     @Autowired
     QuestionRepository questionRepository;
+    @Autowired
+    AnswerRepository answerRepository;
 
     @Override
     public List<QuestionDto> getAllQuestion() {
@@ -67,5 +71,10 @@ public class QuestionServiceImpl implements QuestionService {
         Question question1 = question.get();
         QuestionDto questionDto = dozerBeanMapper.map(question1, QuestionDto.class);
         return questionDto;
+    }
+
+    @Override public Long findAll(Boolean True) {
+
+      return answerRepository.findAll(true);
     }
 }

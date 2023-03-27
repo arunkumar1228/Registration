@@ -2,6 +2,7 @@ package com.web.Quiz.controller;
 
 
 import com.web.Quiz.dto.QuestionDto;
+import com.web.Quiz.model.Answer;
 import com.web.Quiz.model.Question;
 import com.web.Quiz.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +47,11 @@ QuestionService questionService;
         return questionService.getQuestionById(qusId);
     }
 
+
+    @GetMapping("/result")
+    public Long getResult()  {
+        return questionService.findAll(true);
+    }
 
     @PutMapping(value = "/updateQuestionDetailsById")
     public ResponseEntity<QuestionDto> updateQuestion(@RequestParam int qusId,@RequestBody QuestionDto questionDto)  {

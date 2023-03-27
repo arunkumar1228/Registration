@@ -2,6 +2,7 @@ package com.web.Quiz.service;
 
 
 import com.web.Quiz.dto.QuestionDto;
+import com.web.Quiz.model.Answer;
 import com.web.Quiz.model.Question;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -17,4 +18,6 @@ public interface QuestionService {
     QuestionDto updateQuestionDetails(int qusId, QuestionDto questionDto);
 
     QuestionDto getQuestionById(int qusId) ;
+
+    Long findAll(Boolean True);
 }
